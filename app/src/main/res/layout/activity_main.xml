@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF000000"
+        tools:context=".MainActivity">
+
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="22dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="2dp"
+            android:layout_alignParentBottom="true" tools:layout_editor_absoluteY="206dp"
+            tools:layout_editor_absoluteX="87dp" android:id="@+id/buttonGrid">
+
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <Button
+                    android:text="@string/Back"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/actBack"
+                    app:cornerRadius="0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.283"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.046" android:onClick="backspace" android:textSize="17sp"/>
+
+            <Button
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:textSize="17sp"
+                    android:id="@+id/actClear"
+                    app:cornerRadius="0dp" android:text="@string/Clear"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.348" app:layout_constraintVertical_bias="0.283"
+                    android:onClick="clear" android:textColorHighlight="#000000" android:textColorLink="#050505"/>
+
+
+            <Button
+                    android:text="@string/ChangeSign"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:textSize="30sp"
+                    android:backgroundTint="#000000" android:id="@+id/actChangeSign"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.654"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.283" android:onClick="changeSign"/>
+
+            <Button
+                    android:text="@string/Sqrt"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:textSize="30sp"
+                    android:backgroundTint="#000000" android:id="@+id/operSqrt"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.283" android:onClick="sqrt"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <Button
+                    android:text="@string/seven"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:textSize="30sp"
+                    android:backgroundTint="#000000" android:id="@+id/inpt7"
+                    app:cornerRadius="0dp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.424"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.046" android:onClick="inpt7"/>
+
+            <Button
+                    android:text="@string/eight"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:textSize="30sp"
+                    android:id="@+id/inpt8"
+                    app:cornerRadius="0dp" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.348"
+                    app:layout_constraintVertical_bias="0.424" android:onClick="inpt8"/>
+
+            <Button
+                    android:text="@string/nine"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:textSize="30sp"
+                    android:backgroundTint="#000000" android:id="@+id/inpt9"
+                    app:cornerRadius="0dp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintVertical_bias="0.424" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.654" android:onClick="inpt9"/>
+
+            <Button
+                    android:text="@string/plus"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/operPlus"
+                    android:textSize="30sp"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.424" android:onClick="plus"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <Button
+                    android:text="@string/four"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/inpt4"
+                    android:textSize="30sp"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.046"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.564" android:onClick="inpt4"/>
+
+            <Button
+                    android:text="@string/five"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/inpt5"
+                    android:textSize="30sp"
+                    app:cornerRadius="0dp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.348"
+                    app:layout_constraintVertical_bias="0.564" android:onClick="inpt5"/>
+
+            <Button
+                    android:text="@string/six"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/inpt6"
+                    android:textSize="30sp"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.651"
+                    app:layout_constraintVertical_bias="0.564" android:onClick="inpt6"/>
+
+            <Button
+                    android:text="@string/minus"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/operMin"
+                    android:textSize="30sp"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintVertical_bias="0.564" android:onClick="minus"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <Button
+                    android:text="@string/one"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:textSize="30sp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/inpt1"
+                    app:cornerRadius="0dp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.046" app:layout_constraintVertical_bias="0.705"
+                    android:onClick="inpt1"/>
+
+            <Button
+                    android:text="@string/two"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:textSize="30sp"
+                    android:id="@+id/inpt2"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.348" app:layout_constraintVertical_bias="0.705"
+                    android:onClick="inpt2"/>
+
+            <Button
+                    android:text="@string/three"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:textSize="30sp"
+                    android:id="@+id/inpt3"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.651"
+                    app:layout_constraintVertical_bias="0.705" android:onClick="inpt3"/>
+
+
+            <Button
+                    android:text="@string/divide"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:textSize="30sp"
+                    android:id="@+id/operDiv"
+                    app:cornerRadius="0dp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintVertical_bias="0.705" android:onClick="divide"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <Button
+                    android:text="@string/zero"
+                    android:layout_width="180dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/inpt0"
+                    android:textSize="30sp"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.075"
+                    app:layout_constraintVertical_bias="0.845" android:onClick="inpt0"/>
+
+
+            <Button
+                    android:text="@string/decimal"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/operDec"
+                    android:textSize="30sp"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.651"
+                    app:layout_constraintVertical_bias="0.845" android:onClick="addDecimalpart"/>
+
+            <Button
+                    android:text="@string/multiply"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/actMult"
+                    android:textSize="30sp"
+                    app:cornerRadius="0dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintVertical_bias="0.845" android:onClick="multiply"/>
+
+        </LinearLayout>
+
+        <Button
+                android:layout_width="360dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#000000"
+                android:textSize="30sp"
+                android:id="@+id/actCalc"
+                app:cornerRadius="0dp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.924"
+                app:layout_constraintVertical_bias="0.985" android:text="@string/equals" android:onClick="equals"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:text="@string/owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/appName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/outputWindow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.1"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textSize="8sp"/>
+
+    <EditText
+            android:text="Enter number"
+            android:layout_width="380dp"
+            android:layout_height="105dp"
+            android:id="@+id/outputWindow"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/appName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:lineSpacingExtra="20sp"
+            android:textSize="48sp"
+            android:onClick="hideKeyboard"
+            android:textAlignment="textEnd"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/buttonGrid"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
